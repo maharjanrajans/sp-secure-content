@@ -1,134 +1,37 @@
 {
-    "meta": {
-      "version": "1.0.1",
-      "flavor": "test"
-    },
-    "featureFlags": [
-      {
-        "page": "commissioning-success",
-        "name": "appstore-reviews-request",
-        "statuses": [
-          {
-            "platform": "android",
-            "status": false
-          },
-          {
-            "platform": "ios",
-            "status": false
-          }
-        ],
-        "meta": {
-          "date": "2022-06-24",
-          "description": "Turned on by request from Laura Lujan",
-          "tickets": ["https://sunpowercorp.atlassian.net/browse/CM2-3021"],
-          "modified-by": "Fer Cervantes"
+  "meta": {
+    "version": "1.0.1",
+    "flavor": "test"
+  },
+  "featureFlags": [
+    {
+      "page": "commissioning-success",
+      "name": "appstore-reviews-request",
+      "statuses": [
+        {
+          "platform": "android",
+          "status": true
+        },
+        {
+          "platform": "ios",
+          "status": true
         }
-      },
-      {
-        "page": "any-page",
-        "name": "ct-checks-staged-rollout",
-        "statuses": [
-          {
-            "platform": "android",
-            "status": false
-          },
-          {
-            "platform": "ios",
-            "status": false
-          }
-        ],
-        "meta": [
-          {
-            "date": "2022-05-24",
-            "description": "Shwetha requested CT Meter Checks to be turned off on all flavors",
-            "tickets": ["https://sunpowercorp.atlassian.net/browse/CM2-2976"],
-            "modified-by": "Fer Cervantes"
-          },
-          {
-            "date": "2021-09-23",
-            "description": "CT Checks will be available at first only for SunPower Global employees",
-            "tickets": ["https://sunpowercorp.atlassian.net/browse/CM2-2438"],
-            "modified-by": "Fer Cervantes"
-          }, {
-            "date": "2021-12-22",
-            "description": "Shwetha messaged me on 2021-12-22 to turn this off",
-            "tickets": [],
-            "modified-by": "Alvin Cheung"
-          }, {
-            "date": "2021-12-29",
-            "description": "PK asked me on 2021-12-29 to turn this on for the Test flavor",
-            "tickets": [],
-            "modified-by": "Fer Cervantes"
-          }
+      ],
+      "rollout": {
+        "criteria": "all",
+        "email": [
+          "example@gmail.com"
         ]
       },
-      {
-        "page": "feature-feedback",
-        "name": "ct-checks",
-        "statuses": [
-          {
-            "platform": "android",
-            "status": true
-          },
-          {
-            "platform": "ios",
-            "status": true
-          }
+      "meta": {
+        "date": "2022-07-12",
+        "description": "Turned on by request from Laura Lujan",
+        "tickets": [
+          "https://sunpowercorp.atlassian.net/browse/CM2-3021",
+          "https://sunpowercorp.atlassian.net/browse/CM2-2083"
         ],
-        "meta": [
-          {
-            "date": "2021-10-01",
-            "description": "We want to collect feedback from installers about CT checks.",
-            "tickets": ["https://sunpowercorp.atlassian.net/browse/CM2-2587"],
-            "modified-by": "Jose Rios"
-          },
-          {
-            "date": "2022-01-19",
-            "description": "Gamma asked me to change this for testing the ticket",
-            "tickets": ["https://sunpowercorp.atlassian.net/browse/CM2-2587"],
-            "modified-by": "Alvin Cheung"
-          }
-        ]
-      },
-      {
-        "page": "system-configuration",
-        "name": "enable-customer-self-supply",
-        "statuses": [
-          {
-            "platform": "android",
-            "status": false
-          },
-          {
-            "platform": "ios",
-            "status": false
-          }
-        ],
-        "meta": {
-          "date": "2022-09-06",
-          "description": "Leont requested CSS feature flag to be turned off",
-          "tickets": [],
-          "modified-by": ["Fer Cervantes"]
-        }
-      },
-      {
-        "page": "pcs",
-        "name": "pcs",
-        "statuses": [
-          {
-            "platform": "android",
-            "status": false
-          },
-          {
-            "platform": "ios",
-            "status": false
-          }
-        ],
-        "meta": {
-          "date": "2022-06-07",
-          "description": "Turn off PCS - requested by PK",
-          "tickets": [],
-          "modified-by": "Fer Cervantes"
-        }
+        "modified-by": "Rajan Maharjan"
       }
-    ]
-  }
+    }
+  ]
+}
